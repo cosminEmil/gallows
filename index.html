@@ -12,13 +12,7 @@
 
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="form">
-        <label for="word">Word: </label>
-        <input type="text"id="word">
-        <button id="generateBtn" onclick="generateGame()">Generate game</button>
-    </div>
-    
+  <body onload="generateGame()">
     <div class="checkingForm">
         <label for="letter">Check letter:</label>
         <input type="text" name="letter" id="unCheckedLetter" size="2">
@@ -28,6 +22,7 @@
     <div class="lifes">
         <label for="life" id="life">Lifes:</label>
         <input type="number" id="lifesNr" value="7">
+        <div id="message"></div>
     </div>
     
     <div id="game"></div>
